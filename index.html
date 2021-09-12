@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>templates_social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <section class="navbar">
+        <ul class="navbar__list">
+          <li><a href=""><i class="fas fa-home"></i> Logo</a></li>
+          <li><a href=""><i class="fas fa-globe-americas"></i></a></i></li>
+          <li><a href=""><i class="fa fa-user"></i></a></li>
+          <li><a href=""><i class="fas fa-envelope"></i></a></li>
+          <li>
+            <a href=""><i class="fas fa-bell"></i></a>
+            <ul class="navbar__dropdown box-shadow">
+              <li><a href="">One new friend request</a></li>
+              <li>
+                <a href="">John Doe posted on your wall</a>
+              </li>
+              <li><a href="">Jane likes your post</a></li>
+            </ul>
+          </li>
+        </ul>
+        <label for="btn-bar" class="navbar__bar"><i class="fas fa-bars"></i></label>
+        <input hidden type="checkbox" id="btn-bar">
+        <div class="navbar__menu">
+          <a href="">Link 2</a>
+          <a href="">Link 2</a>
+          <a href="">My Profile</a>
+        </div>
+        <a class="navbar__user">
+          <img src="https://www.w3schools.com/w3images/avatar2.png" alt="" />
+        </a>
+      </section>
+    </header>
+    <main>
+      <section class="wrap-left-page">
+        <section class="profile box-shadow">
+          <div class="profile__name">
+            <p>My Profile</p>
+            <img src="https://www.w3schools.com/w3images/avatar3.png" alt="" />
+          </div>
+          <div class="profile__info">
+            <p><i class="fas fa-pen"></i> Designer, UI</p>
+            <p><i class="fas fa-home"></i> London, UK</p>
+            <p><i class="fas fa-birthday-cake"></i> April 1, 1988</p>
+          </div>
+        </section>
+
+        <section class="function box-shadow">
+          <div class="function__item">
+            <label for="text1"
+              ><i class="fas fa-circle-notch"></i> My Group</label
+            >
+            <input hidden type="checkbox" name="" id="text1" />
+            <span>Some text..</span>
+            <label for="text2"
+              ><i class="far fa-calendar-check"></i> My Events</label
+            >
+            <input hidden type="checkbox" name="" id="text2" />
+            <span>Some other text..</span>
+            <label for="album"><i class="fas fa-users"></i> My Photos</label>
+            <input hidden type="checkbox" name="" id="album" />
+            <div class="function__album">
+              <img src="https://www.w3schools.com/w3images/lights.jpg" alt="" />
+              <img src="https://www.w3schools.com/w3images/nature.jpg" alt="" />
+              <img
+                src="https://www.w3schools.com/w3images/mountains.jpg"
+                alt=""
+              />
+              <img src="https://www.w3schools.com/w3images/forest.jpg" alt="" />
+              <img src="https://www.w3schools.com/w3images/nature.jpg" alt="" />
+              <img src="https://www.w3schools.com/w3images/snow.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="interests box-shadow">
+          <p>Interests</p>
+          <p>
+            <span>News</span>
+            <span>W3Schools</span>
+            <span>Labels</span>
+            <span>Games</span>
+            <span>Friends</span>
+            <span>Games</span>
+            <span>Friends</span>
+            <span>Food</span>
+            <span>Design</span>
+            <span>Art</span>
+            <span>Photos</span>
+          </p>
+        </section>
+
+        <section class="notification box-shadow">
+          <span><b>Hey!</b></span>
+          <p>People are looking at your profile. Find out who.</p>
+          <div class="notification__close"><i class="fas fa-times"></i></div>
+        </section>
+      </section>
+
+      <section class="wrap-mid-page">
+        <section class="status box-shadow">
+          <p>Social Media template by w3.css</p>
+          <input type="text" value="Status: Feeling Blue">
+          <a href="" class="btn"><i class="fas fa-pencil-alt"></i> Post</a>
+        </section>
+
+        <section class="news box-shadow">
+          <div class="news__header">
+            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="">
+            <p>John Doe</p>
+            <span>1 min</span>
+          </div>
+          <div class="new__content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="new__content-img">
+              <img src="https://www.w3schools.com/w3images/lights.jpg" alt="">
+              <img src="https://www.w3schools.com/w3images/nature.jpg" alt="">
+            </div>
+          </div>
+          <div class="new__btn">
+            <a href="" class="btn"><i class="fas fa-thumbs-up"></i> Like</a>
+            <a href="" class="btn"><i class="fas fa-comment"></i> Comment</a>
+          </div>
+
+        </section>
+        <section class="news box-shadow">
+          <div class="news__header">
+            <img src="https://www.w3schools.com/w3images/avatar5.png" alt="">
+            <p>Jane Doe</p>
+            <span>16 min</span>
+          </div>
+          <div class="new__content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <!-- <div class="new__content-img">
+              <img src="https://www.w3schools.com/w3images/lights.jpg" alt="">
+              <img src="https://www.w3schools.com/w3images/nature.jpg" alt="">
+            </div> -->
+          </div>
+          <div class="new__btn">
+            <a href="" class="btn"><i class="fas fa-thumbs-up"></i> Like</a>
+            <a href="" class="btn"><i class="fas fa-comment"></i> Comment</a>
+          </div>
+        </section>
+
+        <section class="news box-shadow">
+          <div class="news__header">
+            <img src="https://www.w3schools.com/w3images/avatar6.png" alt="">
+            <p>Angie Jane</p>
+            <span>32 min</span>
+          </div>
+          <div class="new__content">
+            <p>Have you seen this?</p>
+            <div class="new__content-img">
+              <img src="https://www.w3schools.com/w3images/nature.jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div class="new__btn">
+            <a href="" class="btn"><i class="fas fa-thumbs-up"></i> Like</a>
+            <a href="" class="btn"><i class="fas fa-comment"></i> Comment</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="wrap-right-page">
+        <section class="events box-shadow">
+        <p>Upcoming Events:</p>
+        <img src="https://www.w3schools.com/w3images/forest.jpg" alt="">
+        <p><b>Holiday</b></p>
+        <p>Friday 15:00</p>
+        <a href="" class="btn">Info</a>
+        </section>
+
+        <section class="friend box-shadow">
+        <p>Friend Request</p>
+        <img src="https://www.w3schools.com/w3images/avatar6.png" alt="">
+        <p>Jane Doe</p>
+        <div class="friend__btn">
+          <a href="" class="btn"><i class="fas fa-check"></i></a>
+          <a href="" class="btn"><i class="fas fa-times"></i></a>
+        </div>
+        </section>
+
+        <section class="ads box-shadow">
+          <p>ADS</p>
+        </section>
+
+        <section class="bug box-shadow">
+          <i class="fas fa-bug"></i>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Footer
+      </p>
+      <span>Powered by <a href="">w3.css</a></span>
+    </footer>
+  </body>
+</html>

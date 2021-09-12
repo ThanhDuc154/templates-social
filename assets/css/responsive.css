@@ -1,0 +1,83 @@
+main {
+  display: grid;
+  column-gap: 1.6rem;
+  /* row-gap: 2.2rem; */
+  grid-template-columns:
+    minmax(10%, 34.1rem)
+    minmax(45%, 76.5rem)
+    minmax(5%, 22.7rem);
+  grid-template-areas: "wrap-left-page wrap-mid-page wrap-right-page ";
+  /* "wrap-left-page wrap-mid-page . "; */
+  /* ". wrap-mid-page . "; */
+}
+
+.wrap-left-page {
+  grid-area: wrap-left-page;
+}
+
+.wrap-mid-page {
+  grid-area: wrap-mid-page;
+}
+
+.wrap-right-page {
+  grid-area: wrap-right-page;
+}
+
+@media (max-width: 767px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "wrap-left-page"
+      "wrap-mid-page"
+      "wrap-right-page";
+  }
+
+  .navbar__list > li:not(:first-child) {
+    display: none;
+  }
+
+  .navbar__user {
+    display: none;
+  }
+
+  .navbar__bar {
+    display: block;
+  }
+
+  .function__album {
+    grid-template-columns: 1fr;
+  }
+
+  .notification,
+  .interests {
+    display: none;
+  }
+
+  .wrap-mid-page {
+    padding: 0 1.6rem;
+    margin-top: 2.4rem;
+  }
+
+  .friend img {
+    width: 24.8rem;
+    height: 24.8rem;
+  }
+
+  .friend__btn {
+    flex-direction: column;
+  }
+
+  .friend__btn > :first-child {
+    margin-bottom: 3rem;
+  }
+
+  .friend__btn .btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar__menu {
+    display: none !important;
+  }
+}
